@@ -28,7 +28,6 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n >= 10)
 	{
-		c = n + 48;
 		ft_putnbr_fd(n / 10, fd);
 	}
 	c = (n % 10) + '0';
