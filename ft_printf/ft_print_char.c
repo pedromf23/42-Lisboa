@@ -6,13 +6,13 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 14:37:03 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/29 15:14:49 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/04/30 13:37:11 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_char(char c)
+int	ft_print_char(int c)
 {
 	write(1, &c, 1);
 	return (1);

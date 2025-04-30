@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 14:39:22 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/29 18:19:20 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/04/30 13:38:13 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,17 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
+# include <stdio.h>
+# include <stdarg.h>
 
-int		ft_print_char(char c);
+int		ft_print_char(int c);
 int		ft_print_str(char *s);
+int		ft_print_ptr(void *ptr);
 int		ft_print_id(int n);
 int		ft_print_unsigned(unsigned int i);
-char	*ft_itoa(int n);
-int		ft_putstr(char *s);
 int		ft_print_hex(unsigned int num, const char format);
+int		ft_printf(const char *format, ...);
+char	*ft_itoa(int n);
 
 #endif
