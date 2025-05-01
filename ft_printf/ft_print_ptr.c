@@ -6,14 +6,14 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 11:56:32 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/30 12:18:56 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/01 12:26:33 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
 
-static int	ft_puthex(uintptr_t n)
+static int	ft_puthex(unsigned long long n)
 {
 	int		count;
 	char	*hex;
@@ -32,16 +32,44 @@ int	ft_print_ptr(void *ptr)
 
 	count = 0;
 	if (!ptr)
-		return (ft_print_str("0x0"));
+		return (ft_print_str("(nil)"));
 	count = count + ft_print_str("0x");
-	count = ft_puthex((uintptr_t)ptr);
+	count += ft_puthex((unsigned long long)ptr);
 	return (count);
 }
 
 // int	main(void)
 // {
-// 	char	*ptr = "calatecabral";
+// 	char *a = "42";
+// 	int b = 123;
+// 	void *null_ptr = NULL;
 
-// 	ft_print_ptr(ptr);
-// 	return (0);
+// 	void *tests[] = {
+// 		null_ptr,
+// 		a,
+// 		&b,
+// 		(void *)0x1,
+// 		(void *)0x42,
+// 		(void *)0xABCDEF,
+// 		(void *)(unsigned long)-1,
+// 		(void *)(void *)main,
+// 	};
+
+// 	int total = sizeof(tests) / sizeof(void *);
+// 	printf("------ FT_PRINT_PTR TESTS ------\n");
+
+// 	for (int i = 0; i < total; i++)
+// 	{
+// 		printf("Test %d:\n", i + 1);
+// 		printf("Your ft_print_ptr:   [");
+// 		fflush(stdout); // ensure clean output
+// 		int your_len = ft_print_ptr(tests[i]);
+// 		printf("] (len = %d)\n", your_len);
+
+// 		printf("Expected printf ptr: [");
+// 		int real_len = printf("%p", tests[i]);
+// 		printf("] (len = %d)\n", real_len);
+
+// 		printf("-------------------------------\n");
+// 	}
 // }

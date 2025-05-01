@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:06:40 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/30 13:45:40 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/01 12:38:17 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_print_hex(unsigned int num, const char format)
 // int	main(void)
 // {
 // 	unsigned int	i = 444;
-	
+
 // 	ft_print_hex(i, 'x');
 // 	return (0);
 // }
