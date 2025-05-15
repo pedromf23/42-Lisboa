@@ -30,12 +30,4 @@ fclean: clean
 
 re: fclean all
 
-help:
-	@echo "Usage:"
-	@echo "  make        - Build the project"
-	@echo "  make clean  - Remove object files"
-	@echo "  make fclean - Remove all build files"
-	@echo "  make re     - Rebuild everything"
-	@echo "  make help   - Show this help message"
-
-.PHONY: all clean fclean re help
+.PHONY: all clean fclean re

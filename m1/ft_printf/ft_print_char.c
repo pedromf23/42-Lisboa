@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 14:37:03 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/30 13:37:11 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/12 17:31:13 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,3 @@ int	ft_print_char(int c)
 	write(1, &c, 1);
 	return (1);
 }
-
-// int	main(void)
-// {
-// 	char	c = 'P';
-
-// 	ft_print_char(c);
-// 	return (0);
-// }

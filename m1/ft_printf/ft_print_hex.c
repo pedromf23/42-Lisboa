@@ -6,13 +6,13 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:06:40 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/05/01 12:38:17 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:39:56 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int num, const char format)
+int	ft_print_hex(unsigned int num, const char format)
 {
 	char	*hex;
 	int		count;
@@ -23,20 +23,7 @@ int	ft_puthex(unsigned int num, const char format)
 	else
 		hex = "0123456789ABCDEF";
 	if (num >= 16)
-		count = count + ft_puthex(num / 16, format);
+		count = count + ft_print_hex(num / 16, format);
 	count = count + ft_print_char(hex[num % 16]);
 	return (count);
 }
-
-int	ft_print_hex(unsigned int num, const char format)
-{
-	return (ft_puthex(num, format));
-}
-
-// int	main(void)
-// {
-// 	unsigned int	i = 444;
-
-// 	ft_print_hex(i, 'x');
-// 	return (0);
-// }

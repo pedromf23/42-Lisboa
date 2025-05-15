@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 15:31:05 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/30 13:53:59 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/14 19:40:05 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_check_format(char format, va_list args)
 		return (ft_print_hex(va_arg(args, unsigned int), 'X'));
 	if (format == '%')
 		return (ft_print_char('%'));
-	return (0);
+	return (-1);
 }
 
 int	ft_printf(const char *format, ...)
@@ -42,6 +42,8 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	i = 0;
 	count = 0;
+	if (!format)
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1])
@@ -56,8 +58,27 @@ int	ft_printf(const char *format, ...)
 
 // int	main(void)
 // {
-// 	unsigned int	c = 444;
+// 	char	*str = NULL;
 
-// 	ft_printf("%X", c);
+// 	ft_printf("Char: %c\n", 'A');
+// 	printf("Original Char: %c\n", 'A');
+// 	ft_printf("String: %s\n", str);
+// 	printf("Original String: %s\n", str);
+// 	ft_printf("Pointer: %p\n", str);
+// 	printf("Original Pointer: %p\n", str);
+// 	ft_printf("Decimal: %d\n", -123);
+// 	printf("Original Decimal: %d\n", -123);
+// 	ft_printf("Integer: %i\n", -456);
+// 	printf("Original Integer: %i\n", -456);
+// 	ft_printf("Unsigned: %u\n", -3);
+// 	printf("Original Unsigned: %u\n", -3);
+// 	ft_printf("Hex (lower): %x\n", 255);
+// 	printf("Original Hex (lower): %x\n", 255);
+// 	ft_printf("Hex (upper): %X\n", 255);
+// 	printf("Original Hex (upper): %X\n", 255);
+// 	ft_printf("Percent sign: %%\n");
+// 	printf("Original Percent sign: %%\n");
+// 	printf("%d\n",printf(NULL));
+// 	printf("%d\n",ft_printf(NULL));
 // 	return (0);
 // }

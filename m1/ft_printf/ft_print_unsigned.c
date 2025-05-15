@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 16:55:09 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/29 17:43:27 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/12 18:49:52 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ int	ft_print_unsigned(unsigned int i)
 	count = count + ft_print_char((i % 10) + '0');
 	return (count);
 }
-
-// int	main(void)
-// {
-// 	unsigned int	i = 362346;
-
-// 	ft_print_unsigned(i);
-// 	return (0);
-// }

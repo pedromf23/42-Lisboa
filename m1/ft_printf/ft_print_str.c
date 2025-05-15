@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 14:59:50 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/29 15:13:54 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:50:28 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,6 @@ int	ft_print_str(char *s)
 	if (!s)
 		return (write(1, "(null)", 6));
 	while (s[i])
-	{
-		write(1, &s[i], 1);
-		i++;
-	}
+		write(1, &s[i++], 1);
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	char	s[] = "benfica";
-
-// 	ft_print_str(s);
-// 	return (0);
-// }

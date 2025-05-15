@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 10:51:42 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/29 17:20:32 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/12 18:50:09 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	int	n = 3525;
-
-// 	printf("%s\n", ft_itoa(n));
-// 	return (0);
-// }

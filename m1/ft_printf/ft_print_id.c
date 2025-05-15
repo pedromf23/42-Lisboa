@@ -6,7 +6,7 @@
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 15:01:30 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/04/30 12:20:25 by pfonseca         ###   ########.fr       */
+/*   Updated: 2025/05/12 18:49:44 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ int	ft_print_id(int n)
 	free(str);
 	return (count);
 }
-
-// int	main(void)
-// {
-// 	int	n = 6;
-
-// 	ft_print_id(n);
-// 	return (0);
-// }
