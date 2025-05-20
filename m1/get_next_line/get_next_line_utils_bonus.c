@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_bonus_utils.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfonseca <pfonseca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/05 10:57:18 by pfonseca          #+#    #+#             */
-/*   Updated: 2025/05/19 15:59:00 by pfonseca         ###   ########.fr       */
+/*   Created: 2025/05/19 17:06:38 by pfonseca          #+#    #+#             */
+/*   Updated: 2025/05/19 17:07:14 by pfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_line_len(char *s)
 {
